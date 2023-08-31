@@ -27,33 +27,33 @@ function getRandomHexColor() {
 // Создай функцию destroyBoxes(), которая очищает содержимое div#boxes,
 //  тем самым удаляя все созданные элементы.
 
-const inputNum = document.querySelector('#controls>input');
-const btnCreate = document.querySelector('button[data-create]');
-const btnDestroy = document.querySelector('button[data-destroy]');
-const boxes = document.querySelector('#boxes');
-// console.log(boxes);
+// const inputNum = document.querySelector('#controls>input');
+// const btnCreate = document.querySelector('button[data-create]');
+// const btnDestroy = document.querySelector('button[data-destroy]');
+// const boxes = document.querySelector('#boxes');
+// // console.log(boxes);
 
-function createBoxes (amount) {
-  const elements = [];
+// function createBoxes (amount) {
+//   const elements = [];
 
-for (let i = 0; i < amount; i += 1) {
-  // console.log(amount[i]);
-  	const div = document.createElement('div')
-		div.style.height = `${30 + 10 * i}px`
-		div.style.width = `${30 + 10 * i}px`
-		div.style.background = getRandomHexColor()
-		elements.push(div)
+// for (let i = 0; i < amount; i += 1) {
+//   // console.log(amount[i]);
+//   	const div = document.createElement('div')
+// 		div.style.height = `${30 + 10 * i}px`
+// 		div.style.width = `${30 + 10 * i}px`
+// 		div.style.background = getRandomHexColor()
+// 		elements.push(div)
 	
-} return elements
+// } return elements
 
-};
+// };
 
-btnCreate.addEventListener ('click', onBtnCreateClick);
-function onBtnCreateClick (evt) {
+// btnCreate.addEventListener ('click', onBtnCreateClick);
+// function onBtnCreateClick (evt) {
 
-};
+// };
 
-btnDestroy.addEventListener ('click', onBtnDestroyClick);
-function onBtnCreateClick (evt) {
+// btnDestroy.addEventListener ('click', onBtnDestroyClick);
+// function onBtnCreateClick (evt) {
 
-};
+// };
