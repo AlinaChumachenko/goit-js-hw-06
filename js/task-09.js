@@ -20,9 +20,17 @@ function getRandomHexColor() {
 //     .padStart(6, 0)}`;
 // }
 
+
+// У вас друге посилання на локальну робочу сторінку.
+// У дев'ятому завданні виклик функції getRandomHexColor
+//  потрібно записати в змінну та потім її використовувати для зміни фону
+//   і текстового значення тегу span. У вашому випадку функція викликається два рази, 
+//   тому колір фону буде відрізнятись від коду кольору в спані.
+
 // const body = document.querySelector('body');
 const span = document.querySelector('.color');
 const button = document.querySelector('.change-color');
+
 // console.log(body);
 // console.log(span);
 // console.log(button);
@@ -31,7 +39,8 @@ button.addEventListener('click', onButtonClik);
 
 function onButtonClik (evt) {
 // console.dir(evt.currentTarget);
-document.body.style.backgroundColor = `${getRandomHexColor()}`;
-span.textContent = getRandomHexColor();
+let color = getRandomHexColor();
+document.body.style.backgroundColor = color;
+span.textContent = color;
 }
 
